@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Renovação Estética Automotiva | Saquarema, RJ</title>
+<link rel="icon" type="image/png" href="assets/logo-renovacao.png" />
+<meta name="theme-color" content="#070708" />
+<meta name="description" content="Pintura automotiva, limpeza completa de automóveis e renovação estética em Saquarema, RJ. Entre em contato pelo WhatsApp." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Renovação Estética Automotiva | Saquarema" />
+<meta property="og:description" content="Pintura automotiva, limpeza completa e renovação estética em Saquarema, RJ." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Renovação Estética Automotiva",
+  "description": "Pintura automotiva, limpeza completa de automóveis e renovação estética automotiva.",
+  "address": {"@type":"PostalAddress","streetAddress":"Av. Nossa Senhora de Nazareth","addressLocality":"Saquarema","addressRegion":"RJ","postalCode":"28990-210","addressCountry":"BR"},
+  "telephone": "+5522988237456",
+  "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"13:00"}],
+  "hasMap": "https://maps.google.com/?cid=13220783036663401293&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+}
+</script>
+<style>
+  :root{
+    --accent:#e21b2d;
+    --bg:#070708;
+    --fg:#f5f5f5;
+    --muted:rgba(245,245,245,.66);
+    --surface:rgba(255,255,255,.045);
+    --border:rgba(255,255,255,.12);
+    --radius:14px;
+    --shape:999px;
+    --on-accent:#111827;
+    --shadow:0 30px 74px rgba(0,0,0,.34);
+    --tscale:1.08;
+    --glass:rgba(255,255,255,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--fg);font-family:"Inter",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Outfit",Georgia,serif;font-weight:400;line-height:1.12}
+  [class*="v-testimonials-grandes"] .quote,.hero-media-fallback,.v-services-lista .card-num{font-family:"Outfit",Georgia,serif}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:"Outfit",serif;font-size:20px}
+  .mark{width:34px;height:34px;border-radius:10px;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-weight:700;font-family:"Inter",sans-serif;overflow:hidden}
+  .mark img{width:100%;height:100%;object-fit:cover}
+  .nav-links{display:none;gap:24px;font-size:14px;color:var(--muted)}
+  .nav-links a:hover{color:var(--fg)}
+  header{background:transparent;border:none;padding-top:14px}header .nav{background:rgba(0,0,0,.5);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:999px;padding:0 18px;box-shadow:var(--shadow)}
+  .btn{display:inline-block;padding:13px 24px;border-radius:var(--shape);font-size:15px;font-weight:600;border:1px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--accent);color:var(--on-accent)}
+  .btn-primary:hover{filter:brightness(1.08)}
+  .btn-ghost{border-color:var(--border);color:var(--fg)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .btn-sm{padding:9px 18px;font-size:14px}
+  .hero{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:53px 0;min-height:100vh;min-height:100svh;border-top:none}
+  .hero-center{text-align:center}
+  .hero-center .actions{justify-content:center}
+  .hero:after{content:"";position:absolute;inset:auto -20% -60% 40%;height:420px;background:radial-gradient(circle at center,var(--accent),transparent 65%);opacity:.22;filter:blur(20px);pointer-events:none}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);border:1px solid var(--border);border-radius:999px;padding:7px 14px}
+  .hero h1{font-size:calc(clamp(34px,6.4vw,74px) * var(--tscale));margin:22px 0 18px;max-width:18ch}
+  .hero p.lead{color:var(--muted);font-size:clamp(16px,2vw,19px);max-width:56ch}
+  .hero-image p.lead,.hero-image h1{color:#fff}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+  .rating{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-size:14px;color:var(--muted)}
+  .stars{color:var(--accent);letter-spacing:2px}
+  section{padding:76px 0;border-top:1px solid var(--border)}
+  .section-title{font-size:calc(clamp(28px,4vw,42px) * var(--tscale));margin-bottom:14px}
+  .section-sub{color:var(--muted);max-width:58ch;margin-bottom:42px}
+  .grid{display:grid;gap:18px;grid-template-columns:1fr}
+  .card{border-radius:var(--radius);padding:28px}
+  .card{background:var(--surface);border:1px solid var(--border)}
+  .card h3{font-size:calc(22px * var(--tscale));margin-bottom:10px}
+  .card p{color:var(--muted);font-size:15px}
+  .card .price{color:var(--accent);font-weight:600;margin-top:12px}
+  .info{display:grid;gap:14px;grid-template-columns:1fr;margin-top:24px}
+  .info-row{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-radius:calc(var(--radius) - 4px);padding:18px}
+  .info-row span.k{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px}
+  .info-row div{min-width:0;word-break:break-word}
+  .menu-group{margin-bottom:36px}
+  .menu-group-title{font-size:calc(24px * var(--tscale));color:var(--accent);margin-bottom:14px}
+  .menu-item{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px dashed var(--border)}
+  .menu-item p{color:var(--muted);font-size:14px}
+  .menu-price{color:var(--accent);font-weight:600;white-space:nowrap}
+  .gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+  .gallery img{border-radius:var(--radius);height:220px;object-fit:cover;width:100%}
+  .schedule{display:grid;gap:18px;grid-template-columns:1fr}
+  .hour-row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--border);font-size:15px}
+  .hour-row:last-child{border-bottom:none}
+  .hour-row span{color:var(--muted)}
+  .booking p{margin-bottom:22px}
+  .quote{font-size:17px;color:var(--fg)!important}
+  .author{margin-top:14px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)!important}
+  .faq details{border:1px solid var(--border);border-radius:calc(var(--radius) - 4px);padding:18px 20px;margin-bottom:12px;background:var(--surface)}
+  .faq summary{cursor:pointer;font-weight:600}
+  .faq details p{color:var(--muted);margin-top:10px}
+  .cta-box{background:var(--surface);border:1px solid var(--border);border-radius:calc(var(--radius) + 6px);padding:48px 32px;text-align:center}
+  .cta-box h2{font-size:calc(clamp(28px,4.5vw,44px) * var(--tscale));margin-bottom:14px}
+  .cta-box p{color:var(--muted);margin-bottom:30px}
+  .cta-box .actions{justify-content:center}
+  .map{margin-top:24px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
+  .map iframe{width:100%;height:300px;border:0;display:block}
+  footer{padding:38px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+  .float-wa{position:fixed;right:20px;bottom:20px;z-index:40;background:#25d366;color:#fff;border-radius:999px;padding:14px 20px;font-weight:600;font-size:15px;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+  .card-img{width:100%;height:170px;object-fit:cover;border-radius:calc(var(--radius) - 6px);margin-bottom:16px}
+  .menu-item-img{width:64px;height:64px;object-fit:cover;border-radius:calc(var(--radius) - 8px);flex-shrink:0}
+  .menu-item-main{display:flex;gap:14px;align-items:center;min-width:0}
+  @media(min-width:760px){.nav-links{display:flex}.grid{grid-template-columns:repeat(3,1fr)}.info{grid-template-columns:repeat(2,1fr)}.schedule{grid-template-columns:1.2fr 1fr}.gallery{grid-template-columns:repeat(3,1fr)}}
+  
+  /* ---------- hero ---------- */
+  .hero-inner{display:flex;flex-direction:column;gap:32px}
+  .hero-copy{display:flex;flex-direction:column;align-items:flex-start;width:100%}
+  .hero-center .hero-copy{align-items:center;text-align:center}
+  .hero-media{display:none}
+  .v-hero-split{background-image:none!important;align-items:center}
+  .v-hero-split .hero-inner{display:grid;grid-template-columns:1fr;align-items:center;gap:36px}
+  .v-hero-split .hero-media{display:block}
+  .v-hero-split .hero-media img,.v-hero-split .hero-media-fallback{width:100%;height:clamp(240px,42vh,460px);object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+  .hero-media-fallback{display:grid;place-items:center;background:linear-gradient(150deg,var(--accent),transparent 85%);color:var(--on-accent);font-family:"var-display";font-size:74px}
+  .v-hero-vitrine .hero-copy{background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(16px);padding:clamp(26px,4vw,48px);border-radius:calc(var(--radius) + 8px);box-shadow:var(--shadow);align-items:center;text-align:center;max-width:820px;margin:0 auto}
+  .v-hero-minimal{background-image:none!important}
+  .v-hero-minimal h1{font-size:calc(clamp(38px,8vw,92px) * var(--tscale));max-width:22ch}
+  .v-hero-minimal .lead{margin-left:auto;margin-right:auto}
+
+  /* ---------- sobre ---------- */
+  .about-wrap{display:block}
+  .v-about-split .about-wrap{display:grid;grid-template-columns:1fr;gap:32px;align-items:start}
+  .v-about-split .info{margin-top:0}
+  .v-about-destaque .info{grid-template-columns:1fr}
+  .v-about-destaque .info-row{background:var(--surface);border-left:3px solid var(--accent);padding:22px}
+
+  /* ---------- serviços ---------- */
+  .card-num{display:none}
+  .v-services-horizontal .grid{grid-template-columns:1fr}
+  .v-services-horizontal .card{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+  .v-services-horizontal .card-img{height:100%;min-height:150px;margin:0}
+  .v-services-lista .grid{grid-template-columns:1fr;gap:0}
+  .v-services-lista .card{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:baseline;background:transparent;border:none;border-bottom:1px solid var(--border);border-radius:0;box-shadow:none;padding:26px 4px;backdrop-filter:none}
+  .v-services-lista .card-img{display:none}
+  .v-services-lista .card-num{display:block;font-family:"var-display";font-size:clamp(22px,3vw,34px);color:var(--accent);opacity:.9}
+  .v-services-lista .card h3{font-size:calc(26px * var(--tscale))}
+
+  /* ---------- cardápio ---------- */
+  .v-menu-cards .menu-list{display:grid;gap:16px;grid-template-columns:1fr}
+  .v-menu-cards .menu-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;border-bottom:1px solid var(--border);box-shadow:var(--shadow)}
+  .v-menu-cards .menu-item-img{width:86px;height:86px}
+  .v-menu-colunas .menu-list{columns:1;column-gap:40px}
+  .v-menu-colunas .menu-item{break-inside:avoid}
+
+  /* ---------- galeria ---------- */
+  .v-gallery-masonry .gallery{display:block;columns:2;column-gap:12px}
+  .v-gallery-masonry .gallery img{height:auto;margin-bottom:12px;break-inside:avoid}
+  .v-gallery-grandes .gallery{grid-template-columns:1fr}
+  .v-gallery-grandes .gallery img{height:clamp(240px,44vh,460px)}
+  .v-gallery-slider .gallery{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+  .v-gallery-slider .gallery img{flex:0 0 78%;scroll-snap-align:center;height:300px}
+
+  /* ---------- agenda ---------- */
+  .v-schedule-lista .schedule{grid-template-columns:1fr}
+  .v-schedule-lista .booking{display:none}
+  .v-schedule-card .schedule{grid-template-columns:1fr;max-width:640px;margin:0 auto}
+
+  /* ---------- depoimentos ---------- */
+  .v-testimonials-slider .grid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;grid-template-columns:none}
+  .v-testimonials-slider .card{flex:0 0 86%;scroll-snap-align:center}
+  .v-testimonials-grandes .grid{grid-template-columns:1fr;max-width:820px;margin:0 auto}
+  .v-testimonials-grandes .quote{font-size:calc(clamp(20px,3vw,30px) * var(--tscale));line-height:1.4;font-family:"var-display"}
+  .v-testimonials-marquee{overflow:hidden}
+  .v-testimonials-marquee .grid{display:flex;grid-template-columns:none;gap:16px;width:max-content;animation:lh-marquee 38s linear infinite}
+  .v-testimonials-marquee .card{width:340px;flex:0 0 340px}
+  .v-testimonials-marquee:hover .grid{animation-play-state:paused}
+  @keyframes lh-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- faq ---------- */
+  .v-faq-colunas .faq{columns:1;column-gap:40px}
+  .faq-block{break-inside:avoid;margin-bottom:26px}
+  .faq-block h3{font-size:calc(20px * var(--tscale));margin-bottom:8px}
+  .faq-block p{color:var(--muted)}
+
+  /* ---------- contato / CTA ---------- */
+  .contact-wrap{display:block}
+  .v-contact-split .contact-wrap{display:grid;grid-template-columns:1fr;gap:22px;align-items:stretch}
+  .v-contact-split .cta-box{text-align:left}
+  .v-contact-split .actions{justify-content:flex-start}
+  .v-contact-split .map{margin-top:0;height:100%}
+  .v-contact-split .map iframe{height:100%;min-height:320px}
+  .v-contact-fullscreen{min-height:78vh;display:flex;align-items:center;background:radial-gradient(circle at 50% 0%,var(--surface),transparent 70%)}
+  .v-contact-fullscreen .cta-box{background:transparent;border:none;box-shadow:none;padding:0}
+  .v-contact-fullscreen .cta-box h2{font-size:calc(clamp(34px,7vw,74px) * var(--tscale))}
+  .v-contact-flutuante .cta-box{box-shadow:0 34px 80px rgba(0,0,0,.34);transform:translateY(-6px);border-width:1px}
+
+  @media(min-width:760px){
+    .v-hero-split .hero-inner{grid-template-columns:1.05fr .95fr}
+    .v-about-split .about-wrap{grid-template-columns:1.15fr .85fr}
+    .v-about-destaque .info{grid-template-columns:repeat(3,1fr)}
+    .v-services-horizontal .card{grid-template-columns:230px 1fr}
+    .v-services-grandes .grid{grid-template-columns:repeat(2,1fr)}
+    .v-services-grandes .card-img{height:250px}
+    .v-menu-cards .menu-list{grid-template-columns:repeat(2,1fr)}
+    .v-menu-colunas .menu-list{columns:2}
+    .v-gallery-masonry .gallery{columns:3}
+    .v-gallery-grandes .gallery{grid-template-columns:repeat(2,1fr)}
+    .v-gallery-slider .gallery img{flex-basis:42%}
+    .v-testimonials-slider .card{flex-basis:38%}
+    .v-faq-colunas .faq{columns:2}
+    .v-contact-split .contact-wrap{grid-template-columns:1.05fr .95fr}
+  }
+  
+  h1,h2{letter-spacing:-.02em}
+  h1{line-height:1.02}
+  ::selection{background:var(--accent);color:var(--on-accent)}
+  .hero{isolation:isolate}
+  .hero:before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);pointer-events:none}
+  .hero-image:before{display:none}
+  .hero-media{position:relative}
+  .hero-badge{position:absolute;left:-14px;bottom:22px;background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:14px 18px;box-shadow:0 20px 50px rgba(0,0,0,.28);display:flex;flex-direction:column;gap:2px}
+  .hero-badge strong{font-size:22px;color:var(--accent)}
+  .hero-badge span{font-size:12px;color:var(--muted)}
+  .scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);width:26px;height:42px;border:1.5px solid var(--border);border-radius:999px;display:none}
+  .scroll-hint span{position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:4px;background:var(--accent);animation:lh-scroll 1.8s ease-in-out infinite}
+  @keyframes lh-scroll{0%{opacity:0;transform:translateY(0)}40%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
+  .trust{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface)}
+  .hero:not(.hero-image){background:radial-gradient(60% 50% at 50% 0%,color-mix(in srgb,var(--accent) 14%,transparent),transparent 70%)}
+  .v-services-lista .svc-icon{display:none}
+  .v-services-lista .svc:after{display:none}
+  .v-services-horizontal .svc-icon{margin-bottom:0}
+  .trust-grid{display:grid;grid-template-columns:repeat(2,1fr)}
+  .trust-grid>div{padding:26px 18px;display:flex;flex-direction:column;gap:4px;border-right:1px solid var(--border)}
+  .trust-grid>div:last-child{border-right:none}
+  .trust strong{font-family:inherit;font-size:clamp(26px,3.4vw,38px);font-weight:700;letter-spacing:-.02em;line-height:1}
+  .trust strong.sm{font-size:clamp(18px,2.2vw,24px)}
+  .trust strong em{font-style:normal;color:var(--accent);font-size:.7em;margin-left:4px}
+  .trust span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .ticker{overflow:hidden;border-bottom:1px solid var(--border);padding:18px 0;white-space:nowrap}
+  .ticker-track{display:inline-flex;gap:28px;align-items:center;animation:lh-marquee 40s linear infinite;font-size:clamp(18px,2.4vw,26px)}
+  .ticker-track i{color:var(--accent);font-style:normal;font-size:.7em}
+  .sec-head{margin-bottom:44px}
+  .kicker{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  .kicker b{font-weight:600;color:var(--muted);padding-right:10px;border-right:1px solid var(--border)}
+  .kicker:before{content:"";width:22px;height:1px;background:var(--accent)}
+  .sec-head .section-sub{margin-bottom:0;font-size:17px}
+  .about-text{color:var(--muted);font-size:clamp(17px,2vw,21px);line-height:1.7;max-width:62ch}
+  .svc{position:relative;overflow:hidden}
+  .svc:after{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--accent);transition:width .5s cubic-bezier(.22,1,.36,1)}
+  .svc:hover:after{width:100%}
+  .svc-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;margin-bottom:22px;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent);font-size:22px;font-weight:700}
+  .svc-link{display:inline-flex;gap:6px;margin-top:18px;font-size:14px;font-weight:600;color:var(--accent)}
+  .svc-link span{transition:transform .3s}
+  .svc-link:hover span{transform:translateX(4px)}
+  .tst .stars{font-size:14px;display:block;margin-bottom:14px}
+  .author-row{display:flex;align-items:center;gap:12px;margin-top:22px}
+  .avatar{width:42px;height:42px;border-radius:999px;display:grid;place-items:center;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:14px;flex-shrink:0}
+  .author-row .author{margin-top:0;display:flex;flex-direction:column}
+  .author small{font-size:12px;letter-spacing:0;text-transform:none;color:var(--muted)}
+  .faq summary{list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:after{content:"+";font-size:22px;color:var(--accent);transition:transform .3s;line-height:1}
+  .faq details[open] summary:after{transform:rotate(45deg)}
+  .cta-box{position:relative;overflow:hidden;background:radial-gradient(120% 140% at 0% 0%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 55%),var(--surface)}
+  .cta-box .kicker{justify-content:center}
+  .gallery img{aspect-ratio:4/3;height:auto}
+  .nav-end{display:flex;align-items:center;gap:10px}
+  .burger{display:inline-flex;flex-direction:column;gap:6px;background:transparent;border:1px solid var(--border);border-radius:10px;padding:11px 10px;cursor:pointer}
+  .burger span{width:18px;height:1.5px;background:var(--fg);display:block}
+  .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--border);padding:8px 24px 18px}
+  .nav-links.open a{padding:14px 0;border-bottom:1px solid var(--border);font-size:16px;color:var(--fg)}
+  header .nav{position:relative}
+  footer{padding:64px 0 0}
+  .foot-grid{display:grid;gap:36px;grid-template-columns:1fr}
+  .foot-brand p{margin-top:14px;max-width:34ch}
+  footer h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg);margin-bottom:16px;font-weight:600}
+  .foot-links{display:flex;flex-direction:column;gap:10px}
+  .foot-links a:hover{color:var(--accent)}
+  .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:48px;padding-top:22px;padding-bottom:26px;border-top:1px solid var(--border);font-size:13px}
+  .float-wa{padding-bottom:14px}
+  @media(max-width:759px){.float-wa{left:16px;right:16px;bottom:14px;text-align:center}footer{padding-bottom:70px}}
+  @media(min-width:760px){
+    .trust-grid{grid-template-columns:repeat(auto-fit,minmax(0,1fr));grid-auto-flow:column}
+    .scroll-hint{display:block}
+    .burger{display:none}
+    .foot-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}
+    .about-wrap .info{margin-top:36px}
+  }
+  @media(max-width:759px){.trust-grid>div:nth-child(2n){border-right:none}.trust-grid>div:nth-child(-n+2){border-bottom:1px solid var(--border)}}
+  
+  
+  @media (prefers-reduced-motion:no-preference){
+    .reveal{opacity:0;transform:translateY(34px) scale(.96);transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .75s cubic-bezier(.22,1,.36,1)}
+    .reveal.in{opacity:1;transform:none}
+    .card{transition:transform .35s cubic-bezier(.22,1,.36,1),border-color .3s,box-shadow .35s}
+    .grid .card{opacity:0;transform:translateY(27px);transition-delay:var(--d,0ms)}
+    .in .grid .card,.v-testimonials-marquee .grid .card{opacity:1;transform:none}
+    .btn{transition:transform .25s cubic-bezier(.22,1,.36,1),filter .25s,box-shadow .25s}
+    .btn-primary:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 12px 26px rgba(0,0,0,.28)}
+    .gallery img{transition:transform .5s cubic-bezier(.22,1,.36,1),filter .4s}
+    .gallery img:hover{transform:scale(1.03)}
+    .eyebrow{animation:lh-fade .9s cubic-bezier(.22,1,.36,1) both}
+    .hero h1{animation:lh-rise 1s cubic-bezier(.22,1,.36,1) both .06s}
+    .hero .lead{animation:lh-rise 1s cubic-bezier(.22,1,.36,1) both .16s}
+    .hero .actions{animation:lh-rise 1s cubic-bezier(.22,1,.36,1) both .24s}
+    @keyframes lh-fade{from{opacity:0}to{opacity:1}}
+    @keyframes lh-rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+  }
+  @media (prefers-reduced-motion:reduce){.reveal,.grid .card{opacity:1!important;transform:none!important}}
+</style>
+
+<style id="renovacao-brand-refresh">
+  :root{
+    --accent:#e21b2d; --bg:#070708; --fg:#f5f5f5;
+    --muted:rgba(245,245,245,.66); --surface:rgba(255,255,255,.045);
+    --border:rgba(255,255,255,.12); --radius:18px;
+    --shadow:0 28px 80px rgba(0,0,0,.48);
+  }
+  body{
+    background:
+      radial-gradient(ellipse at 50% -12%,rgba(226,27,45,.16),transparent 42%),
+      linear-gradient(180deg,#09090a 0%,#070708 50%,#0c0c0e 100%);
+  }
+  header{padding-top:16px}
+  header .nav{
+    min-height:76px;height:auto;background:rgba(9,9,10,.88);
+    border-color:rgba(255,255,255,.14);border-radius:18px;
+    padding:8px 20px;backdrop-filter:blur(22px);
+  }
+  .brand{min-width:0}
+  .brand-logo{width:190px;height:58px;object-fit:contain;object-position:left center}
+  .mark{display:none}
+  .nav-links{font-weight:600;letter-spacing:.02em}
+  .nav-links a{transition:color .2s ease}
+  .btn{transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{
+    background:linear-gradient(135deg,#f02b3c,#b90f20);color:#fff;
+    box-shadow:0 10px 28px rgba(226,27,45,.22)
+  }
+  .btn-primary:hover{filter:brightness(1.12);box-shadow:0 14px 34px rgba(226,27,45,.32)}
+  .btn-ghost{border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.025)}
+  .hero{
+    min-height:calc(100svh - 88px);padding:100px 0 90px;
+    background:
+      radial-gradient(ellipse at 50% 26%,rgba(226,27,45,.13),transparent 38%),
+      linear-gradient(135deg,rgba(255,255,255,.018),transparent 55%);
+  }
+  .hero:before{
+    opacity:.38;background-size:76px 76px;
+    background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  }
+  .hero:after{background:radial-gradient(circle at center,#e21b2d,transparent 68%);opacity:.14}
+  .hero-copy{position:relative}
+  .hero-logo{
+    display:block;width:min(390px,76vw);max-height:190px;object-fit:contain;
+    margin:0 auto 34px;filter:drop-shadow(0 16px 38px rgba(0,0,0,.45));
+  }
+  .hero .eyebrow{
+    color:#ff5967;border-color:rgba(226,27,45,.35);
+    background:rgba(226,27,45,.075);letter-spacing:.2em
+  }
+  .hero h1{
+    max-width:16ch;text-transform:uppercase;font-weight:700;
+    letter-spacing:-.045em;text-shadow:0 8px 34px rgba(0,0,0,.55);
+  }
+  .hero p.lead{max-width:620px;color:rgba(255,255,255,.72)}
+  .v-hero-vitrine .hero-copy{
+    max-width:920px;padding:clamp(30px,5vw,58px);
+    background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.018));
+    border:1px solid rgba(255,255,255,.12);border-radius:26px;
+    box-shadow:0 35px 100px rgba(0,0,0,.36);
+  }
+  .trust{border-block:1px solid var(--border);background:rgba(255,255,255,.018)}
+  .ticker{border-block:1px solid rgba(226,27,45,.2);color:#f04a58;background:rgba(226,27,45,.045)}
+  section{border-color:rgba(255,255,255,.085)}
+  .kicker{color:#f04a58}
+  .kicker b{background:rgba(226,27,45,.14);color:#ff6470}
+  .section-title{font-weight:650;letter-spacing:-.035em}
+  .section-sub{color:var(--muted)}
+  .svc{
+    position:relative;overflow:hidden;min-height:255px;
+    background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.018));
+    border:1px solid rgba(255,255,255,.12);border-radius:20px;
+    box-shadow:0 18px 46px rgba(0,0,0,.2);transition:transform .25s ease,border-color .25s ease;
+  }
+  .svc:before{
+    content:"";position:absolute;inset:0 auto 0 0;width:3px;
+    background:linear-gradient(180deg,#f33b4c,transparent);opacity:.9
+  }
+  .svc:hover{transform:translateY(-6px);border-color:rgba(226,27,45,.48)}
+  .svc-icon{
+    display:grid;place-items:center;width:48px;height:48px;border-radius:14px;
+    background:rgba(226,27,45,.12);border:1px solid rgba(226,27,45,.28);
+    color:#ff5361;font-size:18px;font-weight:800
+  }
+  .svc-link{color:#ff5967;font-weight:700}
+  .card,.info-row,.cta-box,.map{
+    border-color:rgba(255,255,255,.12);box-shadow:0 18px 48px rgba(0,0,0,.16)
+  }
+  .info-row{background:linear-gradient(135deg,rgba(255,255,255,.055),rgba(255,255,255,.018))}
+  .info-row span.k{color:#ff5967}
+  .hour-row strong{color:#fff}
+  .cta-box{
+    background:radial-gradient(ellipse at 50% 0%,rgba(226,27,45,.13),transparent 60%),rgba(255,255,255,.025);
+    border-radius:24px;padding:clamp(32px,5vw,58px)
+  }
+  footer{background:#050506;border-color:rgba(255,255,255,.1)}
+  footer .brand-logo{width:180px;height:58px}
+  .float-wa{box-shadow:0 12px 32px rgba(0,0,0,.45)}
+  @media(max-width:759px){
+    header .nav{border-radius:16px;padding:8px 13px}
+    .brand-logo{width:150px;height:48px}
+    .hero{min-height:auto;padding:76px 0 90px}
+    .hero-logo{width:min(320px,82vw);margin-bottom:26px}
+    .hero h1{font-size:clamp(34px,10vw,52px)}
+    .v-hero-vitrine .hero-copy{padding:30px 20px}
+    .nav-end .btn{padding:9px 13px}
+  }
+  @media(prefers-reduced-motion:reduce){.svc,.btn{transition:none}}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Renovação Estética Automotiva - início"><img class="brand-logo" src="assets/logo-renovacao.png" alt="Renovação Estética Automotiva"></a>
+    <nav class="nav-links" id="lh-nav"><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#agenda">Agenda</a><a href="#contato">Contato</a></nav>
+    <div class="nav-end">
+      <a class="btn btn-primary btn-sm" href="https://wa.me/5522988237456" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="burger" type="button" aria-label="Abrir menu" aria-controls="lh-nav" aria-expanded="false" onclick="var n=document.getElementById('lh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" data-area="hero" class="sec sec-hero v-hero-vitrine hero hero-center ">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <img class="hero-logo" src="assets/logo-renovacao.png" alt="Logo Renovação Estética Automotiva" />
+        <span class="eyebrow">Estética automotiva · Saquarema, RJ</span>
+        <h1>Renovação Estética Automotiva</h1>
+        <p class="lead">Pintura, limpeza completa e renovação estética para cuidar do seu automóvel. Atendimento em Saquarema, RJ.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/5522988237456" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="https://maps.google.com/?cid=13220783036663401293&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+        
+      </div>
+      
+    </div>
+    <a class="scroll-hint" href="#sobre" aria-label="Rolar para o conteúdo"><span></span></a>
+  </section>
+  <div class="trust"><div class="wrap trust-grid"><div><strong>3</strong><span>Serviços automotivos</span></div><div><strong class="sm">RJ</strong><span>Saquarema · RJ</span></div></div></div>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Pintura automotiva</span><i>✦</i><span>Limpeza completa</span><i>✦</i><span>Renovação estética</span><i>✦</i><span>Pintura automotiva</span><i>✦</i><span>Limpeza completa</span><i>✦</i><span>Renovação estética</span><i>✦</i></div></div>
+
+  <section id="servicos" data-area="services" class="sec sec-services v-services-horizontal reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><b>01</b>O que fazemos</span>
+        <h2 class="section-title">Nossos serviços</h2>
+        <p class="section-sub">Conheça os serviços da Renovação Estética Automotiva. Consulte a equipe para saber mais sobre cada atendimento.</p>
+      </div>
+      <div class="grid">
+        <article class="card svc" style="--d:0ms"><span class="card-num">01</span><span class="svc-icon">P</span><div class="card-body">
+          <h3>Pintura automotiva</h3><p>Serviço de pintura para renovar a aparência do seu veículo. Entre em contato para consultar os detalhes e solicitar uma avaliação.</p>
+          <a class="svc-link" href="https://wa.me/5522988237456?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20pintura%20automotiva." target="_blank" rel="noopener">Consultar serviço <span>→</span></a>
+        </div></article>
+        <article class="card svc" style="--d:80ms"><span class="card-num">02</span><span class="svc-icon">L</span><div class="card-body">
+          <h3>Limpeza completa</h3><p>Serviço de limpeza completa de automóveis para cuidar do veículo e deixá-lo limpo. Consulte as opções disponíveis.</p>
+          <a class="svc-link" href="https://wa.me/5522988237456?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20limpeza%20completa%20de%20autom%C3%B3veis." target="_blank" rel="noopener">Consultar serviço <span>→</span></a>
+        </div></article>
+        <article class="card svc" style="--d:160ms"><span class="card-num">03</span><span class="svc-icon">R</span><div class="card-body">
+          <h3>Renovação estética</h3><p>Cuidados estéticos para renovar a apresentação do automóvel. Fale com a equipe para conhecer os procedimentos oferecidos.</p>
+          <a class="svc-link" href="https://wa.me/5522988237456?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20renova%C3%A7%C3%A3o%20est%C3%A9tica." target="_blank" rel="noopener">Consultar serviço <span>→</span></a>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="sobre" data-area="about" class="sec sec-about v-about-destaque reveal">
+    <div class="wrap about-wrap">
+      <div class="about-copy">
+        <div class="sec-head">
+        <span class="kicker"><b>04</b>Quem somos</span>
+        <h2 class="section-title">Sobre a Renovação Estética Automotiva</h2>
+        
+      </div>
+        <p class="about-text">A Renovação Estética Automotiva oferece serviços de pintura, limpeza completa de automóveis e renovação estética em Saquarema, RJ. Entre em contato para conhecer os serviços e solicitar informações.</p>
+      </div>
+      <div class="info"><div class="info-row"><div><span class="k">Endereço</span>Av. Nossa Senhora de Nazareth, Saquarema - RJ, 28990-210</div></div><div class="info-row"><div><span class="k">Telefone</span><a href="tel:5522988237456">+55 22 98823-7456</a></div></div><div class="info-row"><div><span class="k">Localização</span><a href="https://maps.google.com/?cid=13220783036663401293&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener">Abrir no Google Maps</a></div></div></div>
+    </div>
+  </section>
+
+  <section id="agenda" data-area="schedule" class="sec sec-schedule v-schedule-split reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker"><b>04</b>Funcionamento</span>
+        <h2 class="section-title">Nosso horário de atendimento</h2>
+        <p class="section-sub">Confira os dias e horários de funcionamento.</p>
+      </div>
+      <div class="schedule">
+        <div class="hours card"><div class="card-body">
+          <div class="hour-row"><span>Segunda-feira</span><strong>08:30 – 17:00</strong></div>
+          <div class="hour-row"><span>Terça-feira</span><strong>08:30 – 17:00</strong></div>
+          <div class="hour-row"><span>Quarta-feira</span><strong>08:30 – 17:00</strong></div>
+          <div class="hour-row"><span>Quinta-feira</span><strong>08:30 – 17:00</strong></div>
+          <div class="hour-row"><span>Sexta-feira</span><strong>08:30 – 17:00</strong></div>
+          <div class="hour-row"><span>Sábado</span><strong>09:00 – 13:00</strong></div>
+          <div class="hour-row"><span>Domingo</span><strong>Fechado</strong></div>
+        </div></div>
+        <div class="card booking"><div class="card-body">
+          <h3>Solicite informações</h3><p>Fale com a equipe para consultar os serviços, valores e disponibilidade de atendimento.</p>
+          <a class="btn btn-primary" href="https://wa.me/5522988237456" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" data-area="contact" class="sec sec-contact v-contact-fullscreen reveal">
+    <div class="wrap contact-wrap">
+      <div class="cta-box">
+        <span class="kicker">Fale com a gente</span>
+        <h2>Vamos conversar?</h2>
+        <p>Resposta rápida pelo WhatsApp, sem compromisso.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/5522988237456" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:5522988237456">+55 22 98823-7456</a>
+        </div>
+      </div>
+      <div class="map"><iframe title="Mapa" loading="lazy" src="https://maps.google.com/maps?q=Av.%20Nossa%20Senhora%20de%20Nazareth%20-%20Saquarema%2C%20RJ%2C%2028990-210&output=embed"></iframe></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="#inicio" aria-label="Renovação Estética Automotiva - início"><img class="brand-logo" src="assets/logo-renovacao.png" alt="Renovação Estética Automotiva"></a>
+      <p>Pintura, limpeza completa e renovação estética automotiva em Saquarema, RJ.</p>
+    </div>
+    <div><h4>Navegação</h4><nav class="foot-links"><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#agenda">Agenda</a><a href="#contato">Contato</a></nav></div>
+    <div><h4>Contato</h4><div class="foot-links"><a href="tel:5522988237456">+55 22 98823-7456</a><span>Av. Nossa Senhora de Nazareth, Saquarema - RJ, 28990-210</span></div></div>
+    <div><h4>Horários</h4><div class="foot-links"><span>Segunda a sexta · 08:30 – 17:00</span><span>Sábado · 09:00 – 13:00</span><span>Domingo · Fechado</span></div></div>
+  </div>
+  <div class="wrap foot-bottom"><span>© 2026 Renovação Estética Automotiva. Todos os direitos reservados.</span><a href="#inicio">Voltar ao topo ↑</a></div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/5522988237456" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  var hero = document.querySelector('.hero-image');
+  if (hero && window.innerWidth > 900) {
+    var raf = 0;
+    window.addEventListener('scroll', function(){
+      if (raf) return;
+      raf = requestAnimationFrame(function(){
+        raf = 0;
+        hero.style.backgroundPosition = 'center calc(50% + ' + (window.scrollY * 0.12) + 'px)';
+      });
+    }, { passive: true });
+  }
+})();
+</script>
+</body>
+</html>
